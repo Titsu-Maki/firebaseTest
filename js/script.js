@@ -19,7 +19,7 @@ form.addEventListener('submit', handleFormSubmit);
 function handleAuthState(user) {
   if (user) {
     showPrivateInfo()
-    return console.log('hay usuario uwu');
+    return console.log('al fin un usuario uwu');
   }
 
   showLoginForm()
