@@ -15,7 +15,7 @@ firebase.auth().onAuthStateChanged(handleAuthState);
 form.addEventListener('submit', handleFormSubmit);
 
 
-// Application defs
+
 function handleAuthState(user) {
   if (user) {
     showPrivateInfo()
@@ -69,7 +69,7 @@ function showLoginForm() {
 }
 
 
-// Firebase defs
+
 function createUser({ email, password }) {
   console.log('Creating user ' + email);
 
@@ -82,7 +82,7 @@ function createUser({ email, password }) {
         console.log('Ya existe el usuario');
         const soLogin = confirm(
           `Este usuario ya existe.
-          ¿Quieres iniciar sesión?`
+          Â¿Quieres iniciar sesiÃ³n?`
         );
         return !!soLogin ? loginUser({ email, password }) : alertTryAgain(error);;
       }
@@ -109,7 +109,7 @@ function signoutUser() {
 }
 
 
-// General Utils
+
 function alertTryAgain(error) {
   console.log(error);
   return alert('Error, intenta de nuevo');
